@@ -5,6 +5,7 @@ public class Calc {
        add();
        subtract();
        multiply();
+       divide();
     }
     public static void add() {
         System.out.println("Add");
@@ -42,6 +43,19 @@ public class Calc {
         int secondNumber = inputs.nextInt();
 
         int total = firstNumber * secondNumber;
+        System.out.println("The total is " +total);
+
+    }
+    public static void divide() {
+        System.out.println("Divide");
+        System.out.println("Please enter your first number: ");
+        Scanner inputs = new Scanner(System.in);
+        float firstNumber = inputs.nextInt();
+
+        System.out.println("Please enter your second number: ");
+        float secondNumber = inputs.nextInt();
+
+        float total = firstNumber / secondNumber;
         System.out.println("The total is " +total);
 
     }
